@@ -2,7 +2,15 @@
 //  SceneDelegate.swift
 //  ToDoList_Assignment5
 //
-//  Created by Parth Maru on 2022-11-13.
+//  Student Name: Deep Mehta
+//  Student id: 301212407
+//  Student Name: Khushboo Kodwani
+//  Student id: 301273818
+//  Student Name: Parth Maru
+//  Student id: 301209761
+//
+//  Date: 27 November 2022
+//  App name: TodoList
 //
 
 import UIKit

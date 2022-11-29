@@ -13,6 +13,11 @@
 		363835282920C9C500BDB724 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363835262920C9C500BDB724 /* Main.storyboard */; };
 		3638352A2920C9C600BDB724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 363835292920C9C600BDB724 /* Assets.xcassets */; };
 		3638352D2920C9C600BDB724 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3638352B2920C9C600BDB724 /* LaunchScreen.storyboard */; };
+		36531E4029336524006D1E6D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36531E3E29336524006D1E6D /* Model.xcdatamodeld */; };
+		36531E4329336709006D1E6D /* ToDoList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36531E4129336709006D1E6D /* ToDoList+CoreDataClass.swift */; };
+		36531E4429336709006D1E6D /* ToDoList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36531E4229336709006D1E6D /* ToDoList+CoreDataProperties.swift */; };
+		36A59E9C293589E9000D6650 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A59E9B293589E9000D6650 /* TableCell.swift */; };
+		36A59E9E29358AAF000D6650 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A59E9D29358AAF000D6650 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		363835292920C9C600BDB724 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3638352C2920C9C600BDB724 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3638352E2920C9C600BDB724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36531E3F29336524006D1E6D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		36531E4129336709006D1E6D /* ToDoList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		36531E4229336709006D1E6D /* ToDoList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoList+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		36A59E9B293589E9000D6650 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		36A59E9D29358AAF000D6650 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,28 @@
 		3638351F2920C9C500BDB724 /* ToDoList_Assignment5 */ = {
 			isa = PBXGroup;
 			children = (
+				36531E6829336FE6006D1E6D /* ToDoListitems */,
 				363835202920C9C500BDB724 /* AppDelegate.swift */,
+				36A59E9D29358AAF000D6650 /* DetailsViewController.swift */,
 				363835222920C9C500BDB724 /* SceneDelegate.swift */,
+				36A59E9B293589E9000D6650 /* TableCell.swift */,
 				363835242920C9C500BDB724 /* ViewController.swift */,
 				363835262920C9C500BDB724 /* Main.storyboard */,
 				363835292920C9C600BDB724 /* Assets.xcassets */,
 				3638352B2920C9C600BDB724 /* LaunchScreen.storyboard */,
 				3638352E2920C9C600BDB724 /* Info.plist */,
+				36531E3E29336524006D1E6D /* Model.xcdatamodeld */,
 			);
 			path = ToDoList_Assignment5;
+			sourceTree = "<group>";
+		};
+		36531E6829336FE6006D1E6D /* ToDoListitems */ = {
+			isa = PBXGroup;
+			children = (
+				36531E4129336709006D1E6D /* ToDoList+CoreDataClass.swift */,
+				36531E4229336709006D1E6D /* ToDoList+CoreDataProperties.swift */,
+			);
+			path = ToDoListitems;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +162,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				363835252920C9C500BDB724 /* ViewController.swift in Sources */,
+				36531E4329336709006D1E6D /* ToDoList+CoreDataClass.swift in Sources */,
 				363835212920C9C500BDB724 /* AppDelegate.swift in Sources */,
+				36A59E9E29358AAF000D6650 /* DetailsViewController.swift in Sources */,
+				36A59E9C293589E9000D6650 /* TableCell.swift in Sources */,
 				363835232920C9C500BDB724 /* SceneDelegate.swift in Sources */,
+				36531E4029336524006D1E6D /* Model.xcdatamodeld in Sources */,
+				36531E4429336709006D1E6D /* ToDoList+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +321,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,6 +350,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +388,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		36531E3E29336524006D1E6D /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				36531E3F29336524006D1E6D /* Model.xcdatamodel */,
+			);
+			currentVersion = 36531E3F29336524006D1E6D /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 363835152920C9C500BDB724 /* Project object */;
 }
